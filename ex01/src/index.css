@@ -1,0 +1,61 @@
+<style media="screen">
+	
+body {
+    
+ }
+#keyboard {
+    padding:10px 10px;
+    border:2px solid #000;
+    text-align:center;
+	height: 250px;
+	width: 640px;
+	background-color:#393939;
+	text-decoration-color: aqua;
+	 }
+#keyboard div {
+    margin:1px 1px;
+}
+	
+#keyboard label {
+  width:500px;
+  height: 300px;
+}	
+	
+#space {
+    width:100px;
+ }
+#keyboard label {
+    margin-top:40px;
+    text-decoration:underline;
+	display:inline-block;
+	width: 600px;
+	height: 300px
+	
+ }
+#keyboard input {
+	width: 45px;
+	height: 45px;
+	background-color:#393939;
+	color: white;
+	
+	
+ }
+	#keyboard input[type="text"] {
+    margin-top:20px;
+    box-shadow:none;
+ }
+	
+	
+#keyboard textarea[type="text"]{
+width: 500px;
+	height: 500px;
+	
+}
+
+	
+#keyboard #back {
+    font-weight: normal;
+	width: 90px;
+	
+ }
+</style>

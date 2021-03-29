@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<title>keyboard</title>
+
+
+
+
+<link href="index.css" rel="stylesheet" type="text/css">
+<link href="index.js.css" rel="stylesheet" type="text/css">
+	
+
+<script>
+(function() {
+   'use strict';
+   var a,b;
+function init(){ 
+   a=document.getElementById('keyboard').getElementsByTagName('input'); 
+
+for(b=0;b<a.length;b++) {
+if(a[b].type==='button') { 
+   a[b].addEventListener('onclick',makeClickHandler(b));
+   }
+  }
+
+document.getElementById('clear').onclick=function() {
+   document.getElementById('text').value='';
+  }
+ }
+
+function makeClickHandler(b) {
+   a[b].onclick=function() {
+if(a[b].id==='back') {
+   document.getElementById('text').value=
+   document.getElementById('text').value.replace(/.$/,'');
+ }
+
+else {
+
+   document.getElementById('text').value+=this.value.toLowerCase();
+   }
+	   
+	   
+	   
+	   
+function upperCaseF(b){
+	   a[b].onclick=function() {
+if(a[b].id==='CL') {
+    setTimeout(function(){
+        b.value = b.value.toUpperCase();
+    }, 1);
+}	  
+}	}		   
+  
+	   
+	   
+	   
+  };
+ }
+   window.addEventListener?
+   window.addEventListener('load',init,false):
+   window.attachEvent('onload',init);
+})();
+</script>
+	
+	
+	
+</head>
+<body>
+<h2>QWERTY Keyboard</h2>	
+	
+<label><input id="text" type="text"></label>
+	
+	
+<div id="keyboard">
+
+<div>
+ <input type="button" value="1" color="withe">
+ <input type="button" value="2">
+ <input type="button" value="3">
+ <input type="button" value="4">
+ <input type="button" value="5">
+ <input type="button" value="6">
+ <input type="button" value="7">
+ <input type="button" value="8">
+ <input type="button" value="9">
+ <input type="button" value="0">
+ <input id="back" type="button" value="Backspace">	
+</div><div>
+ <input type="button" value="q">
+ <input type="button" value="w">
+ <input type="button" value="e">
+ <input type="button" value="r">
+ <input type="button" value="t">
+ <input type="button" value="y">
+ <input type="button" value="u">
+ <input type="button" value="i">
+ <input type="button" value="o">
+ <input type="button" value="p">
+ <input id="CL" type="button" value="Caps Lock">	
+</div><div>
+
+ <input type="button" value="a">
+ <input type="button" value="s">
+ <input type="button" value="d">
+ <input type="button" value="f">
+ <input type="button" value="g">
+ <input type="button" value="h">
+ <input type="button" value="j">
+ <input type="button" value="k">
+ <input type="button" value="l">
+ <input id="back" type="button" value="OK">	
+</div><div>
+
+ <input type="button" value="z">
+ <input type="button" value="x">
+ <input type="button" value="c">
+ <input type="button" value="v">
+ <input type="button" value="b">
+ <input type="button" value="n">
+ <input type="button" value="m">
+ <input type="button" value="-">
+ <input type="button" value="_">
+ <input type="button" value=".">
+ <input id="clear" type="button" value="Clear">	
+</div><div>
+ <input id="space" type="button" value=" ">
+</div><div>
+
+</div>
+
+</div>
+
+</body>
+</html>
